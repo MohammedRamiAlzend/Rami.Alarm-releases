@@ -1,0 +1,49 @@
+name: الإبلاغ عن مشكلة
+description: المنبه ما رن، أو الرنين وقف قبل حل اللغز، أو شي ثاني مش شغّال
+title: "[مشكلة] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: هالمعلومات بتساعد نلاقي المشكلة بسرعة.
+  - type: textarea
+    id: what
+    attributes:
+      label: شو صار؟
+      description: شو المشكلة، وشو كنت متوقّع يصير بدالها.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: كيف بتصير؟
+      description: الخطوات اللي بتطلّع المشكلة، خطوة خطوة.
+      placeholder: |
+        1. ضفت منبه لبعد دقيقة
+        2. قفلت الشاشة
+        3. المنبه ما رن
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: الجهاز
+      description: الشركة والموديل، مثل Samsung Galaxy A54.
+      placeholder: "Samsung Galaxy A54"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: نسخة أندرويد
+      placeholder: "14"
+  - type: input
+    id: version
+    attributes:
+      label: نسخة Rami.Alarm
+      placeholder: "1.0.0"
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: صور الشاشة
+      description: إذا في صورة بتوضّح المشكلة، اسحبها لهون.

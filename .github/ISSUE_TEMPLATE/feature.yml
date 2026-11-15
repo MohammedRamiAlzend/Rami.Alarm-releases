@@ -1,0 +1,27 @@
+name: اقتراح ميزة
+description: فكرة جديدة أو تحسين على شي موجود
+title: "[ميزة] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: شكراً على اقتراحك. كل ما وضّحت أكتر، كل ما كان أسهل نفهم المطلوب.
+  - type: textarea
+    id: idea
+    attributes:
+      label: شو الفكرة؟
+      description: احكي الميزة بجملة أو جملتين.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: ليش بتحتاجها؟
+      description: شو المشكلة اللي بتحلّها.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: مثال
+      description: كيف بتتخيّلها؟ خطوات، أو صورة إذا عندك.
